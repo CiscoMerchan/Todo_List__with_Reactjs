@@ -28,7 +28,8 @@ You may also see any lint errors in the console.
     - File name TodoList.jsx
     - Create function component TodoList
     - Export component to App.js
-    - Create style for TodoList component in componentStyleSheet as TodoList.css   
+    - Create style for TodoList component in componentStyleSheet as TodoList.css
+    - TodoList.css   
     - To render icon 'X' it will use react-incons package
      
 

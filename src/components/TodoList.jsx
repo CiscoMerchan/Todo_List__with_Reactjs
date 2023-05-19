@@ -1,3 +1,4 @@
+import '../componentStyleSheet/TodoList.css'
 
 function TodoList ({text}){
   return (
