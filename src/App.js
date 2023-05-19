@@ -10,7 +10,7 @@ function App() {
       </div>
       <div className='title-container'>
         <h1>My List</h1>
-        <TodoList text='Hello'/>
+        <TodoList text='Learn React by yourself, following the instructuction with freecodecamp '/>
       </div>
     </div>
   );

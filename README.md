@@ -30,6 +30,8 @@ You may also see any lint errors in the console.
     - Export component to App.js
     - Create style for TodoList component in componentStyleSheet as TodoList.css
     - TodoList.css   
-    - To render icon 'X' it will use react-incons package
+    - To render icon delete 'X' it will use react-incons package
+        `npm install react-icons --save`
+        *** More info: https://react-icons.github.io/react-icons
      
 
