@@ -19,3 +19,10 @@ You may also see any lint errors in the console.
 ## 2. Container for the component
     -Creating of a container where the input and display list      component will be display
     - These elements are created in App.js and styled in App.css
+
+    Create a new folder in 'src' named component. In this folder will be the components files
+
+## 3. Input Componet
+    - File name TodoList.jsx
+    - To render icon 'X' it will use react-incons package
+
