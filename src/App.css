@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  color: aliceblue;
+  background-color: antiquewhite;
+  font-family: Lato, sans-serif;
+  margin-bottom: 40px;
+}
+.title-container  {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  background-color: #ff6600;
+
+}
+.title {
+  margin-left: 15px;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  user-select: none;
+}
