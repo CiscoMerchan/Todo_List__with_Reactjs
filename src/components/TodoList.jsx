@@ -8,7 +8,7 @@ function TodoList ({text}){
         {text}
       </div>
       <div className="todolist-icon">
-        <AiOutlineCloseCircle />
+        <AiOutlineCloseCircle className="todolist-icon" />
       </div>
     </div>
   )
