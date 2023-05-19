@@ -33,5 +33,13 @@ You may also see any lint errors in the console.
     - To render icon delete 'X' it will use react-incons package
         `npm install react-icons --save`
         *** More info: https://react-icons.github.io/react-icons
+
+        At the top of TodoList.jsx import react-icon  package:
+        `import { IconName } from "react-icons/ai";` 
+        find icon in:
+         `https://react-icons.github.io/react-icons/icons?name=ai`
+        
+        Once the we know the icon we want to use, click on the icon that will copyclip the name and paste inside the brackets of import replace 'IconName' for the choosen icon.
+        Then to render the icon in the component (this elemet is a rect component in itself): `<IconName />` 
      
 

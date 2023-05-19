@@ -1,4 +1,5 @@
 import '../componentStyleSheet/TodoList.css'
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 function TodoList ({text}){
   return (
@@ -7,7 +8,7 @@ function TodoList ({text}){
         {text}
       </div>
       <div className="todolist-icon">
-
+        <AiOutlineCloseCircle />
       </div>
     </div>
   )
