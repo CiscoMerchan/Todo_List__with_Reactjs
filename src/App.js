@@ -1,5 +1,6 @@
 
 import './App.css';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       </div>
       <div className='title-container'>
         <h1>My List</h1>
-
+        <TodoList text='Hello'/>
       </div>
     </div>
   );
