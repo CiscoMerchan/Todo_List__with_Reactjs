@@ -3,11 +3,14 @@ import './App.css';
 
 function App() {
   return (
-    <div className="Todo List">
-      <div className='title-container'>
-      <h1 className='title'>To do List</h1>
+    <div className="todo-list">
+      <div className='logo-container'>
+      <h1 className='logo'>To do List</h1>
       </div>
-    
+      <div className='title-container'>
+        <h1>My List</h1>
+
+      </div>
     </div>
   );
 }
