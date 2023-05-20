@@ -53,7 +53,9 @@ You may also see any lint errors in the console.
     
     - Export Form.
 
-    - Create a Form.css file in componentStyleSheet to add style to Form component
+    - Create a Form.css file in componentStyleSheet to add style to Form component.
+
+    - import Form.css to Form.jsx
 
 
     
