@@ -17,6 +17,7 @@
 /* list dsone */
 .todolist-container.todolist-container-done {
   background-color: #B799FF;
+  color: white;
   text-decoration: line-through;
 }
 /* text */
