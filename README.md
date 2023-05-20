@@ -44,6 +44,8 @@ You may also see any lint errors in the console.
 
     - Add a class to the `className="todolist-container"` with a props 'isDone' as condition and on click will change the style to let know the user tha the tasks have been done.
     
-    - Add new class to TodoList.css that when the user click on the background color will change and the text decorator. (Check on inspection add the new class name to verify if the result is good).  
-     
+    - Add new class to TodoList.css that when the user click on the background color will change and the text decorator. (Check on inspection add the new class name to verify if the result is good). 
+    
+## 4. Form Componet
+    -New file Form.jsx in component folder
 
