@@ -71,6 +71,16 @@ You may also see any lint errors in the console.
     Export to App.js to check that everything is fine.
 
     - Create a Manager.css file inside componentStyleSheet folder. once the style is done import to Manager.jsx
+
+## 6. Manage state of TodoList
+
+    The state of the component will be manage inside Manager.jsx. To create and manage an array the will contain the the TodoList I will use 'useState' Hook.
+
+    - import useState
+
+    - Inside 'Manager' function and before 'return':
+        `const [todoList, setTodoList] = useState([])`
+        'todoList' will hold the array of todolist and 'setTodoList' is a function that will manage the state of the array. 
      
 
 
