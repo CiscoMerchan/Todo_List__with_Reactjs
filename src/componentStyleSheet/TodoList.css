@@ -1,3 +1,4 @@
+/* list */
 .todolist-container {
   min-width: 250px;
   max-width: 500px;
@@ -11,6 +12,11 @@
   border-radius: 7px;
   border: 1px solid aliceblue;
   cursor: pointer;
+}
+/* list dsone */
+.todolist-container.todolist-container-done {
+  background-color: #B799FF;
+  text-decoration: line-through;
 }
 /* text */
 .todolist-text {
@@ -26,4 +32,4 @@
   width: 25px;
   height: 25px;
   margin: 5px;
-}
+ }
