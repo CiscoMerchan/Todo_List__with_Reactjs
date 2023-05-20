@@ -7,6 +7,11 @@ function Manager() {
 
   const [todoList, setTodoList] = useState([]);
 
+  const addTodoList = todoList => {
+    console.log('add Text')
+    console.log(todoList)
+  }
+
   return(
     <>
       <Form />

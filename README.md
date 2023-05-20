@@ -88,7 +88,11 @@ You may also see any lint errors in the console.
          
         todoListIsDone and deleteTodoList will be pass as a function onClick and will take as argument the id. in this way we can know which object in the 'todoList' array will be either make as complete or delete.
 
-        
+  ### Render Text input from '<Form />'
+
+    - Create a funtion that will add the text from the input to the 'todoList' array.
+
+             
 
      
 
