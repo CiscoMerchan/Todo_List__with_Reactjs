@@ -47,5 +47,9 @@ You may also see any lint errors in the console.
     - Add new class to TodoList.css that when the user click on the background color will change and the text decorator. (Check on inspection add the new class name to verify if the result is good). 
     
 ## 4. Form Componet
-    -New file Form.jsx in component folder
+    - New file Form.jsx in component folder
+    - Create form component inside Form.jsx. This form will take just one input text(the task to add in the list). And will have a button element.
+    -Export Form
+
+    
 
