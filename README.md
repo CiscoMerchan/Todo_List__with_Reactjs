@@ -57,6 +57,8 @@ You may also see any lint errors in the console.
 
     - import Form.css to Form.jsx
 
+    -import Form component to App.js
+
 
     
 
