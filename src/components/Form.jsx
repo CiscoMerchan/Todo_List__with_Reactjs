@@ -28,7 +28,7 @@ function Form(props) {
       isDone: false
     }
     // console.log(newTodoList) OK
-    
+    props.onSubmit(newTodoList);
   } 
 
   return(

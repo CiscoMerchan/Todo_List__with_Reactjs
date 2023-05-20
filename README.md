@@ -145,7 +145,10 @@ You may also see any lint errors in the console.
             id: uuidv4(),
             ...`  
 
-    - Check the 'newTodoList' in the console    
+    - Check the 'newTodoList' in the console 
+
+    - Pass as props the 'newTodoList' to Manager.jsx:
+        `props.onSubmit(newTodoList);`    
 
 
              
