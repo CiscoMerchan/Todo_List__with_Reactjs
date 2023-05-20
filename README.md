@@ -67,6 +67,10 @@ You may also see any lint errors in the console.
 
     - import Form component. Add inside the Manager function <From />
 
+    - Bellow <Form /> add a <div> element that will take a list of TodoList components. And import <TodoList />.
+    Export to App.js to check that everything is fine.
+     
+
 
     
 

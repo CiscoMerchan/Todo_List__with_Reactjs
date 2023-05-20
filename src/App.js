@@ -1,6 +1,6 @@
 
 import './App.css';
-
+import Manager from './components/Manager'
 function App() {
   return (
     <div className="todo-list">
@@ -9,7 +9,7 @@ function App() {
       </div>
       <div className='title-container'>
         <h1>My List</h1>
-        
+        <Manager />
       </div>
     </div>
   );
