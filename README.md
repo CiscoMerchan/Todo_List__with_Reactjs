@@ -65,6 +65,8 @@ You may also see any lint errors in the console.
 
     - Create Manager.jsx file component folder. 
 
+    - import Form component. Add inside the Manager function <From />
+
 
     
 
