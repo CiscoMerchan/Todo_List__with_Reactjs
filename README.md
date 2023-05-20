@@ -48,8 +48,13 @@ You may also see any lint errors in the console.
     
 ## 4. Form Componet
     - New file Form.jsx in component folder
+    
     - Create form component inside Form.jsx. This form will take just one input text(the task to add in the list). And will have a button element.
-    -Export Form
+    
+    - Export Form.
+
+    - Create a Form.css file in componentStyleSheet to add style to Form component
+
 
     
 
