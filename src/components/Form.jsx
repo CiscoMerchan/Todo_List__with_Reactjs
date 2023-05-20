@@ -1,5 +1,9 @@
+/*This component will take as input the todo Task*/ 
+
 import { useState } from 'react';
-// This component will take as input the todo Task
+// id generator
+import { v4 as uuidv4 } from 'uuid';
+
 import '../componentStyleSheet/Form.css'
 function Form(props) {
 
@@ -17,12 +21,14 @@ function Form(props) {
     /*newTodoList is and object that will represent the new text that will be render as text
     in <TodoList /> component */ 
     const newTodoList = {
-      id: '11',
+      id: uuidv4(),
       // text from the input
       text: input,
       // Boolean that will define the style class in TodoList. default value 'false'
       isDone: false
     }
+    // console.log(newTodoList) OK
+    
   } 
 
   return(

@@ -132,6 +132,21 @@ You may also see any lint errors in the console.
             isDone: false
             }
         } `     
+   #### Generate ID for newTodoList
+    Each todolist need to have a unique id to be able to generate change in the todolist array in Manager.jsx.
+    To generate the uniques id we will use 'uuid' package. (https://www.npmjs.com/package/uuid)
+
+    - in the terminal `npm install uuid`
+
+    - in Form.jsx : `import { v4 as uuidv4 } from 'uuid';`  
+
+    - Add 'uuidv4()' as value in 'id':
+        `const newTodoList = 
+            id: uuidv4(),
+            ...`  
+
+    - Check the 'newTodoList' in the console    
+
 
              
 
