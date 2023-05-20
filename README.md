@@ -94,7 +94,9 @@ You may also see any lint errors in the console.
 
     - Add a function that will handle the event (user click on Add button) in Form.jsx.
 
-    - Add function that will create an object that will contain id and text 
+    - Add function that will create an object that will contain id and text.
+
+    - Manage the state inside Form.jsx, importing 'useState'
 
              
 
