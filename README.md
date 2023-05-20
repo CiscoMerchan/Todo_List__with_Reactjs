@@ -88,7 +88,7 @@ You may also see any lint errors in the console.
          
         todoListIsDone and deleteTodoList will be pass as a function onClick and will take as argument the id. in this way we can know which object in the 'todoList' array will be either make as complete or delete.
 
-  ### Render Text input from '<Form />'
+  ### Handle Text input from '<Form />'
 
     - Create a funtion that will add the text from the input to the 'todoList' array.
 
@@ -107,7 +107,31 @@ You may also see any lint errors in the console.
         and inside the <input/> element (add event listener to input):
         `onChange={handleChange}`     
 
-    - Check in the console in the text typed in the input case is return the characters.     
+    - Check in the console in the text typed in the input case is return the characters. 
+
+  ### Handle add button in '<Form />'
+
+    - Add a event listener to <form> element:
+        `<form 
+        className='form-list'
+        onSubmit={handleSendInput}
+        >
+        ...` 
+    - Function that handle the event:
+        ` const handleSendInput = e => {
+            /*.preventDefault() avoid the refresh of the page*/ 
+            e.preventDefault();
+
+            /*newTodoList is and object that will represent the new text that will be render as text
+            in <TodoList /> component */ 
+            const newTodoList = {
+            id: '11',
+            // text from the input
+            text: input,
+            // Boolean that will define the style class in TodoList. default value 'false'
+            isDone: false
+            }
+        } `     
 
              
 

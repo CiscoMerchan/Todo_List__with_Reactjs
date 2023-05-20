@@ -10,15 +10,26 @@ function Form(props) {
     console.log(input)
   }
   
-  const handleInput = e => {
+  const handleSendInput = e => {
+    /*.preventDefault() avoid the refresh of the page*/ 
+    e.preventDefault();
+
+    /*newTodoList is and object that will represent the new text that will be render as text
+    in <TodoList /> component */ 
     const newTodoList = {
       id: '11',
-      text:'Hello'
+      // text from the input
+      text: input,
+      // Boolean that will define the style class in TodoList. default value 'false'
+      isDone: false
     }
-
   } 
+
   return(
-    <form className='form-list'>
+    <form 
+      className='form-list'
+      onSubmit={handleSendInput}
+      >
       <input 
       className='form-input'
       type='text'
