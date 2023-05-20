@@ -11,10 +11,18 @@ function Manager() {
     <>
       <Form />
       <div className='list-container'>
-        <TodoList text='learn react'/> 
-        <TodoList text='practice react'/>
-        <TodoList text='sleep'/>
-        <TodoList text='repeat'/> 
+       {
+        todoList.map((todoList,index) =>
+          <TodoList 
+            text={todoList.text}
+            /*props to know is the the task have been click and it will 
+            change the style. this a boolean*/ 
+            isDone={todoList.isDone}
+
+          />
+        
+        )
+       }
       </div>
     </>
   );

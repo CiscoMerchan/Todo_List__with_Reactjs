@@ -81,6 +81,15 @@ You may also see any lint errors in the console.
     - Inside 'Manager' function and before 'return':
         `const [todoList, setTodoList] = useState([])`
         'todoList' will hold the array of todolist and 'setTodoList' is a function that will manage the state of the array. 
+
+    - Render the TodoList component using map()
+    
+    - Add props to TodoList.jsx : id(to identify the object), todoListIsDone (a function), deleteTodoList (a function). to manage the diferent states of <TodoList /> component.
+         
+        todoListIsDone and deleteTodoList will be pass as a function onClick and will take as argument the id. in this way we can know which object in the 'todoList' array will be either make as complete or delete.
+
+        
+
      
 
 
