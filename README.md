@@ -42,6 +42,8 @@ You may also see any lint errors in the console.
         Once the we know the icon we want to use, click on the icon that will copyclip the name and paste inside the brackets of import replace 'IconName' for the choosen icon.
         Then to render the icon in the component (this element is a rect component in itself): `<IconName />` 
 
-    - Add a class to the `className="todolist-container"` that under the condition of click will change the style to let know the user tha the tasks have been done.   
+    - Add a class to the `className="todolist-container"` with a props 'isDone' as condition and on click will change the style to let know the user tha the tasks have been done.
+    
+    - Add new class to TodoList.css that when the user click on the background color will change and the text decorator.   
      
 
