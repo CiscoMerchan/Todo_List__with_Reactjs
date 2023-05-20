@@ -69,6 +69,8 @@ You may also see any lint errors in the console.
 
     - Bellow <Form /> add a <div> element that will take a list of TodoList components. And import <TodoList />.
     Export to App.js to check that everything is fine.
+
+    - Create a Manager.css file inside componentStyleSheet folder. once the style is done import to Manager.jsx
      
 
 
