@@ -92,6 +92,10 @@ You may also see any lint errors in the console.
 
     - Create a funtion that will add the text from the input to the 'todoList' array.
 
+    - Add a function that will handle the event (user click on Add button) in Form.jsx.
+
+    - Add function that will create an object that will contain id and text 
+
              
 
      
