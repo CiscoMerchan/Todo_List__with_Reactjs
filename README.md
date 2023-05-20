@@ -98,6 +98,17 @@ You may also see any lint errors in the console.
 
     - Manage the state inside Form.jsx, importing 'useState'
 
+        ` const [input, setInput] = useState('');
+  
+            const handleChange = e => {
+                setInput(e.target.value);
+                console.log(input)
+            }` 
+        and inside the <input/> element (add event listener to input):
+        `onChange={handleChange}`     
+
+    - Check in the console in the text typed in the input case is return the characters.     
+
              
 
      
