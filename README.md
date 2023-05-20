@@ -24,7 +24,7 @@ You may also see any lint errors in the console.
 
     Create a new folder in 'src' named componentStyleSheet. In this folder will be the style files of the components. 
 
-## 3. Input Componet
+## 3. TodoList Componet
     - File name TodoList.jsx
     - Create function component TodoList
     - Export component to App.js
@@ -40,6 +40,8 @@ You may also see any lint errors in the console.
          `https://react-icons.github.io/react-icons/icons?name=ai`
         
         Once the we know the icon we want to use, click on the icon that will copyclip the name and paste inside the brackets of import replace 'IconName' for the choosen icon.
-        Then to render the icon in the component (this elemet is a rect component in itself): `<IconName />` 
+        Then to render the icon in the component (this element is a rect component in itself): `<IconName />` 
+
+    - Add a class to the `className="todolist-container"` that under the condition of click will change the style to let know the user tha the tasks have been done.   
      
 

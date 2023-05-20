@@ -3,7 +3,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 
 function TodoList ({text}){
   return (
-    <div className="todolist-container">
+    <div className={isDone ? 'todolist-container todolist-container-done':'todolist-container'}>
       <div className="todolist-text">
         {text}
       </div>
