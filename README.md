@@ -189,6 +189,20 @@ You may also see any lint errors in the console.
 
     - Update the current state using the state function and pass a argument the new array created.
 
+  #### Render todoList in <TodoList /> component
+
+    -  `<TodoList />`  it has been already set using '.map()' but without displaying any text.
+
+    - Add 'key' argument as a key and the value is the id of the object. With a key-value paire the in .map() is necessary to uniquely identify each element in the mapped array.
+        `key={todoList.id}`.
+
+    - Add props 'id', the value in id props will be used to manage other function in Form.jsx to change the state of the todoList.(Is the same value in 'id' and in 'key' the main diffence is that 'key' is needed for .map() and 'id' because a props give access to the value).
+        ` id={todoList.id}`.
+
+    - Add 'text' props. This the text inputed by the user.
+
+    - Add 'isDone' props that will be use behind the seen to change the className of the element depending on the event.            
+
 
 
 

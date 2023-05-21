@@ -20,12 +20,8 @@ function Manager() {
 
       /*Update the current state of 'todoList' using the state function 'setTodoList'*/ 
       setTodoList(newTodoListUpdated);
-      
-      
     }
-   
-  
-  }
+   }
 
   return(
     <>
@@ -40,9 +36,16 @@ function Manager() {
       />
       <div className='list-container'>
        {
-        todoList.map((todoList,index) =>
-          <TodoList 
-            // text={todoList.text}
+        todoList.map((todoList) =>
+          <TodoList
+            /*key is mandatory will using .map in this case. but 
+            because is not a props we don't access to the key argument
+             so this is why just bellow there is id props with the same 
+             argument thi diference is that we access to that props bellow.*/ 
+            key={todoList.id}
+            // props id from the object to have access to the object
+            id={todoList.id}
+            text={todoList.text}
             /*props to know is the the task have been click and it will 
             change the style. this a boolean*/ 
             isDone={todoList.isDone}
