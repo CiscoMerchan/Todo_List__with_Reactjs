@@ -7,10 +7,24 @@ function Manager() {
 
   const [todoList, setTodoList] = useState([]);
 
-  const addTodoList = todoList => {
+  const addTodoList = newtodoList => {
+    // this condition check if the text from the object is not empty
+    if(newtodoList.text.trim()){
+
+      // eliminate space at the start and the end of the text
+      newtodoList.text = newtodoList.text.trim();
+
+      /*array that take the new object from the form and the the 
+      previous object in todoList curent state*/
+      const newTodoListUpdated = [newtodoList, ...todoList];
+
+      /*Update the current state of 'todoList' using the state function 'setTodoList'*/ 
+      setTodoList(newTodoListUpdated);
+      
+      
+    }
    
-    console.log('add Text')
-    console.log(todoList)
+  
   }
 
   return(
