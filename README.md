@@ -148,7 +148,35 @@ You may also see any lint errors in the console.
     - Check the 'newTodoList' in the console 
 
     - Pass as props the 'newTodoList' to Manager.jsx:
-        `props.onSubmit(newTodoList);`    
+        `props.onSubmit(newTodoList);`  
+### Main Challange
+    The main challange for me is to understand how in a form the data is transfert from one component to another. Here is when 'props' have therir role. 
+    Easy to understand that 'props' take data into a component from another component like
+    `{props.name}`. But how to create an action in another function by passing an argument from a componet to another? in this way each component manage its own functionality.
+
+    This is what I understood:
+
+   **1. Form**  
+    - I have a Form component, inside there is an <input> element that take the inputs from the user.
+
+    - To store the data from the user a use 'useState' hook, which store the the current state (value in the input) and a function that update the state (value).
+
+    - To make use of the useState will be done through an event listener 'onChange' that takes a function as an argument. A function that will update the state of the current value that comes from the input element.
+
+    - Once the user is done typing the input and press on 'Add' <buttom> the Form has an event listener property 'onSubmit'. This event instruct the form what to do, that instruction is manage by the function that is pass as an argument inside the bracket of the 'onSubmit' event listener.
+
+    - The function that manage the action after click on 'add' button it will take as argument the event listener start the instructions:
+        a. use event listener to prevent the refresh of the page by using `.preventDefault();` method.
+        b. In this case create an object that will take the input value store in the current state, plus more other information that wants to be transferred.
+        c. Using 'props' to return as argument the new object create ( tihis props will be render inside the <Form /> component that it is in Manager.jsx file, the props in Manager.jsx will take as argument a function and that function in Manager function will take as argument the new object that Form component is returning from the form submition.).
+   **2. Manager**
+    - Inside `<Form />` component onSubmit props will be render and inside the brackets will take as argument 'addTodoList' function.
+    
+    - 'addTodoList' function will be call at that moment and because the onSubmit props comes with an argument (an object). 
+    
+    - The argument in 'addTodoList' will be use to add the object to the useState in Manager component (in this case the current state is an array) and manage by the state function.         
+
+
 
 
              
