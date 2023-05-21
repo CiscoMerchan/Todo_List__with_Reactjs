@@ -27,11 +27,13 @@ function Form(props) {
       // Boolean that will define the style class in TodoList. default value 'false'
       isDone: false
     }
+  
     // console.log(newTodoList) OK
     /*this props onSubmit will sent as n argument the newTodoList object for the function
     'addTodoList' in Manager.jsx inside the Form component. this create a transfer of information
     between the components*/ 
     props.onSubmit(newTodoList);
+    
   } 
 
   return(

@@ -190,6 +190,7 @@ You may also see any lint errors in the console.
     - Update the current state using the state function and pass a argument the new array created.
 
   #### Render todoList in <TodoList /> component
+        * Each object in todoList creates a new `<TodoList />` component using .map()
 
     -  `<TodoList />`  it has been already set using '.map()' but without displaying any text.
 
@@ -201,7 +202,23 @@ You may also see any lint errors in the console.
 
     - Add 'text' props. This the text inputed by the user.
 
-    - Add 'isDone' props that will be use behind the seen to change the className of the element depending on the event.            
+    - Add 'isDone' props that will be use behind the seen to change the className of the element depending on the event.
+
+   ### Delete a <TodoList /> component
+
+    - A 'deleteTodoList' function that will take as argument the 'id' of the component.
+
+    - Inside that function it will created a new array using .filter() that will render all the element of the array exept the element that have the 'id' of the element that have been clicked.  
+        `const newTodoListUpdated = todoList.filter(todoList => todoList.id !==id);`
+    
+    - Add the new array to the current state through the state function.
+        `setTodoList(newTodoListUpdated);`
+
+    - The destructure props 'deleteTodoList' created in 'TodoList.jsx'. 'deleteTodoList' is a function(that take 'id' as argument) inside 'onClick' event listener. Because this props takes the property of the 'onClick'. Add 'deleteTodoList' as props inside '<TodoList />' component. The event listener is activated when the user click on the delete icon.
+
+    - Inside the brackets of 'deleteTodoList' props is call the 'deleteTodoList' function created in Manager.jsx, this function will operate the instruction inside the function.     
+
+
 
 
 

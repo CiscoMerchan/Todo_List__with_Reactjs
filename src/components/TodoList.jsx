@@ -9,7 +9,7 @@ function TodoList ({ id, text, isDone, todoListIsDone , deleteTodoList }){
         
         {text}
       </div>
-      <div className="todolist-icon"
+      <div className="todolist-icon-"
         onClick={() => deleteTodoList(id)}>
 
         <AiOutlineCloseCircle className="todolist-icon" />
