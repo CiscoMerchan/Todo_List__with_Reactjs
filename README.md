@@ -174,7 +174,22 @@ You may also see any lint errors in the console.
     
     - 'addTodoList' function will be call at that moment and because the onSubmit props comes with an argument (an object). 
     
-    - The argument in 'addTodoList' will be use to add the object to the useState in Manager component (in this case the current state is an array) and manage by the state function.         
+    - The argument in 'addTodoList' will be use to add the object to the useState in Manager component (in this case the current state is an array) and manage by the state function.
+
+   #### Render input in Manager component
+    - The 'addTodoList' function take as argument the input fron the form.
+
+    - Check that there is not empty the input text value.
+
+    - if there is space at the start or at the end of the string, clean the string using '.trim()'.
+
+    - create a new array the will update the object insite the current state. at the first in the array is added the new object and as second argument the current state with the spread operator.
+        `const newTodoListUpdated = [newtodoList, ...todoList];`
+        this way the new arrival object will be render at the top of the list. 
+
+    - Update the current state using the state function and pass a argument the new array created.
+
+
 
 
 
