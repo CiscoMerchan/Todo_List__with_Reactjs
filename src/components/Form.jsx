@@ -13,7 +13,7 @@ function Form(props) {
     setInput(e.target.value);
     console.log(input)
   }
-  
+  // Action onclick at 'add' buttom.(when form is submited)
   const handleSendInput = e => {
     /*.preventDefault() avoid the refresh of the page*/ 
     e.preventDefault();
@@ -28,12 +28,16 @@ function Form(props) {
       isDone: false
     }
     // console.log(newTodoList) OK
+    /*this props onSubmit will sent as n argument the newTodoList object for the function
+    'addTodoList' in Manager.jsx inside the Form component. this create a transfer of information
+    between the components*/ 
     props.onSubmit(newTodoList);
   } 
 
   return(
     <form 
       className='form-list'
+      // form event listener once the user clicks on the button 'Add' 
       onSubmit={handleSendInput}
       >
       <input 
@@ -41,6 +45,7 @@ function Form(props) {
       type='text'
       placeholder='Insert text'
       name='text'
+      // Take the input text to a function that handles the event
       onChange={handleChange}
       />
       <button className='form-button'
