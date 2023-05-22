@@ -246,6 +246,13 @@ You may also see any lint errors in the console.
 
     - Add in side '<TodoList />' component the props and the function that is in Manager.jsx.
         `todoListIsDone={todoListDone}`
+#### App Done
+
+### What to add to this project
+
+- Create a JSON file that store the input.
+
+- Fecth data from the JSON file.
 
 
 
