@@ -28,6 +28,18 @@ function Manager() {
     const newTodoListUpdated = todoList.filter(todoList => todoList.id !== id); 
     setTodoList(newTodoListUpdated);
    }
+  const todoListDone =  id => {
+    const newTodoListUpdated = todoList.map(todoList => {
+      if(todoList.id === id) {
+        /*if todoList.isDone is false it will become true and if 
+        is true become false. This give a toggle property */
+        todoList.isDone = !todoList.isDone;
+      }
+      // it will return that particular todoList that is inside the if condition.
+      return todoList
+    });
+    setTodoList(newTodoListUpdated);
+  }
 
   return(
     <>
@@ -37,7 +49,6 @@ function Manager() {
          fuction takes an argument 'todoList' ('todoList' value argument in this case
          is 'newTodoList' object from Form.jsx) and that argument/value will be access 
          inside addTodoList function, after that argument is use in 'useState' */
-        
         onSubmit={addTodoList}
       />
       <div className='list-container'>
@@ -55,12 +66,11 @@ function Manager() {
             /*props to know is the the task have been click and it will 
             change the style. this a boolean*/ 
             isDone={todoLists.isDone}
-
             /*porps event litsener to delete component */ 
             deleteTodoList={deleteTodoList}
-
+             /*porps event litsener to change condition in isDone component */ 
+            todoListIsDone={todoListDone}
           />
-        
         )
        }
       </div>

@@ -216,8 +216,36 @@ You may also see any lint errors in the console.
 
     - The destructure props 'deleteTodoList' created in 'TodoList.jsx'. 'deleteTodoList' is a function(that take 'id' as argument) inside 'onClick' event listener. Because this props takes the property of the 'onClick'. Add 'deleteTodoList' as props inside '<TodoList />' component. The event listener is activated when the user click on the delete icon.
 
-    - Inside the brackets of 'deleteTodoList' props is call the 'deleteTodoList' function created in Manager.jsx, this function will operate the instruction inside the function.     
+    - Inside the brackets of 'deleteTodoList' props is call the 'deleteTodoList' function created in Manager.jsx, this function will operate the instruction inside the function.
 
+   ### Change the state of a component whet a task is complete
+    The idea is when the user has completed a task, the user clicks on the component and, the component selected changes it style color and text decoration. This is how the user can make the difference between which task have been done or not.
+    
+    In the beginning while creating the 'TodoList' component there is:
+    
+        - A props function 'todoListIsDone'. this props is at first <div> element inside a onClick attribute with a function and 'id' as parameter. Thi 'id' will be pass to Manager component and fetch in that component by a nother function that will make the operation. 
+
+        - A className with an ternary operator as argument 'isDone' props that set the condition to change the style of the 'TodoList' component.
+            `<div className={isDone ? 'todolist-container todolist-container-done':'todolist-container'}>
+                <div className="todolist-text"
+                    onClick={() => todoListIsDone(id)}>`
+
+    - Create a function with an 'id' argument.
+        `const todoListDone =  id => {`
+
+    - Inside the function a new variable that will .map() the state of the current array that under a conditional operator will fect the element that is equal to the 'id' requested and if that is the case change the value 'isDone' in the element and return the whole array with the choosen element modified. Then using the state function actualize the current state with the new array.     
+    `    const newTodoListUpdated = todoList.map(todoList => {
+        if(todoList.id === id) {
+            /*if todoList.isDone is false it will become true and if is true become false. This give a toggle property */ 
+            todoList.isDone = !todoList.isDone;
+        }
+        return todoList;
+        });
+        setTodoList(newTodoListUpdated);
+    }`
+
+    - Add in side '<TodoList />' component the props and the function that is in Manager.jsx.
+        `todoListIsDone={todoListDone}`
 
 
 
