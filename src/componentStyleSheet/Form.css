@@ -7,23 +7,30 @@
 
 .form-input {
   width: 350px;
-  font-size: 18px;
+  font-size: 22px;
   background-color: antiquewhite;
   padding: 14px 32px 14px 16px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #ff6600;
+  border: 2px solid #FFEEBB;
   outline: none;
+  
 }
 
 .form-button  {
   padding: 16px;
   font-size: 18px;
   font-family: Roboto, sans-serif;
+  font-weight: 700;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   outline: none;
-  background-color: #D89216;
+  background-color:var(--color-lg1);
   color: antiquewhite;
   text-transform: capitalize;
+}
+
+.form-button:hover {
+  background-color:var(--color-dark1);
+  color: var(--color-lg1);
 }

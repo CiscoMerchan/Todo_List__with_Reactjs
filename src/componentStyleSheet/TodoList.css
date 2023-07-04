@@ -4,7 +4,7 @@
   /* max-width: 500px;        */
   min-height: 65px;
   background-color: #F0EDD4;
-  color: #E2703A;
+  color: var(--color-dark1);
   margin: 5px 0;
   padding: 8px 15px 8px 20px;
   display: flex;
@@ -16,15 +16,16 @@
 }
 /* list dsone */
 .todolist-container.todolist-container-done {
-  background-color: #D89216;
+  background-color: transparent /* var(--color-dark1),#D89216*/;
   color: white;
   text-decoration: line-through;
+  border: 3px solid;
 }
 /* text */
 .todolist-text {
   width: 100%;
   height: 100%;
-  font-size: 20px;
+  font-size: 28px;
   display: flex;
   align-items: center;
   overflow-wrap: anywhere;
@@ -34,4 +35,6 @@
   width: 40px;
   height: 40px;
   margin: 5px;
+  font-weight: 700;
+  color: var(--color-lg1);
  }

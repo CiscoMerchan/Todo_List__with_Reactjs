@@ -7,7 +7,8 @@
 html,
 body{
   color: #F9FBE7;
-  background-color: #F0EDD4;
+  background-image: url('../src/assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg') ;
+  background-size: cover;
   font-family: Lato, sans-serif;
   margin-bottom: 40px;
 }
@@ -26,13 +27,15 @@ body{
   margin-bottom: 30px;
   align-items: center;
   justify-content: left;
-  background-color: #ff6600;
+ 
 
 }
 .logo {
   margin: 25px;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 5rem;
+  margin-left: 5rem;
   text-transform: uppercase;
   user-select: none;
 }
@@ -43,7 +46,7 @@ body{
   min-width: 300px;
   max-width: 600px;
   min-height: 250px;
-  background-color: #ECCDB4 ;
+  background-color: #ECCDB4  transparent;
   padding: 25px;
   margin: 10px;
   align-items: center;
@@ -52,10 +55,11 @@ body{
 }
 
 .title-container h1 {
-  color: #ff6600;
-  font-size: 26px;
+  
+  color: #FFEEBB;
+  font-size: 36px;
   font-family: Roboto, sans-serif;
   text-align: center;
-  margin: 20px 0;
+  margin: 1.5rem 0;
   user-select: none;
 }
